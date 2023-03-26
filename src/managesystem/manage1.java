@@ -32,7 +32,6 @@ public class manage1 {
 				case 4: 
 					System.out.print("music name: ");
 					String musicname2 = input.next();
-					
 				
 			}
 		}
