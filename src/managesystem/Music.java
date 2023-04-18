@@ -2,31 +2,32 @@ package managesystem;
 
 
 public class Music{
-	
-	String musicname;
-	String singer;
-	int releaseyear;
-	String genre;
-	
-	public Music() {}
-	
-	public Music(String musicname,String singer) {
-		this.musicname = musicname;
-		this.singer = singer;
 
+	   String MusicName;
+	   String Singer;
+	   int ReleaseYear;
+	   String Genre;
+	   
+	   
+	   public Music(){
+	      
+	   }
+	   
+	   public Music(String name,int releaseyear) {
+	      this.MusicName=name;
+	      this.ReleaseYear=releaseyear;
+	   }
+	   
+	   public Music(String name,int releaseyear,String singer,String genre) {
+	      this.MusicName=name;
+	      this.ReleaseYear=releaseyear;
+	      this.Singer=singer;
+	      this.Genre=genre;
+	   }
+	   public void printInfo() {
+	      System.out.print(" *Music name: "+MusicName);
+	      System.out.print(" *Music releaseyear: "+ReleaseYear);
+	      System.out.print(" *Music singer: "+Singer);
+	      System.out.print(" *Music genre: "+Genre+"\n");
+	   }
 	}
-	
-	public Music(String musicname,String singer,int releaseyear,String genre) {
-		this.musicname = musicname;
-		this.singer = singer;
-		this.releaseyear = releaseyear;
-		this.genre = genre;
-	}
-	
-	public void printInfo() {
-		System.out.print("Music name: " + musicname);
-		System.out.print(" /Singer: " + singer);
-		System.out.print(" /Releaseyear: " + releaseyear);
-		System.out.println(" /Genre: " + genre);
-	}
-}
