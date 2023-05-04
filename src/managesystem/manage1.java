@@ -11,7 +11,7 @@ public class manage1 {
 	      Scanner input=new Scanner(System.in);
 	      Musicmanager musicmanager=new Musicmanager(input);
 	      while(num!=5) {
-	      System.out.println("*** Music Management System ***");
+	      System.out.println("**** Music Management System ****");
 	      System.out.println("1.Add Music");
 	      System.out.println("2.Delete Music");
 	      System.out.println("3.Edit Music");

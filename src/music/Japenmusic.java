@@ -24,7 +24,7 @@ public class Japenmusic extends Music{
 				      break;
 			      }
 			      else if(answer == 'n' || answer == 'N') {
-			    	  this.setReleaseYear(0000);
+			    	  this.setReleaseYear(000);
 			    	  break;
 			      }
 			      else {
