@@ -9,7 +9,7 @@ import music.Music;
 import music.Musicinput;
 import music.Musickind;
 import music.USAmusic;
-
+ 
 public class Musicmanager {
 	
 	ArrayList<Musicinput> musics=new ArrayList<Musicinput>();

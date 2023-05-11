@@ -1,6 +1,6 @@
 package music;
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class Japenmusic extends Music implements Musicinput{
 	

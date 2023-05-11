@@ -1,8 +1,6 @@
 package managesystem;
-
+ 
 import java.util.Scanner;
-
-
 
 public class manage1 {
 

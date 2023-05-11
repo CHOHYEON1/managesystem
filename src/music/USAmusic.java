@@ -1,5 +1,5 @@
 package music;
-
+ 
 import java.util.Scanner;
 
 public class USAmusic extends Music implements Musicinput {
