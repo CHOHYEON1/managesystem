@@ -2,9 +2,8 @@ package music;
 
 import java.util.Scanner;
 
-public class USAmusic extends Music {
+public class USAmusic extends Music implements Musicinput {
 	
-	protected String singerNationality;
 	protected int singerAge;
 	
 	public USAmusic(Musickind kind){
@@ -92,7 +91,6 @@ public class USAmusic extends Music {
 	    System.out.print(" *Music singer: "+singer);
 	    System.out.print(" *Music releaseyear: "+releaseYear);
 	    System.out.print(" *Music genre: "+genre);
-	    System.out.print(" *Music singerNationality: "+singerNationality);
 	    System.out.print(" *Music singerAge: "+singerAge+"\n");
     }
 }

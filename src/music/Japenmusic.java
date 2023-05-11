@@ -2,7 +2,7 @@ package music;
 
 import java.util.Scanner;
 
-public class Japenmusic extends Music{
+public class Japenmusic extends Music implements Musicinput{
 	
     public Japenmusic(Musickind kind){
         super(kind);
@@ -39,4 +39,25 @@ public class Japenmusic extends Music{
 		String genre=input.next();
 		this.setGenre(genre);
     }
+	
+	public void printInfo() {
+		String skind="none";
+		switch(this.kind) {
+		case Koreamusic:
+			skind="Kpop.";
+			break;
+		case Japenmusic:
+			skind="Jpop.";
+			break;
+		case USAmusic:
+			skind="USApop.";
+			break;
+		default:
+		}
+		System.out.print(" *kind: "+skind);
+		System.out.print(" *Music name: "+musicName);
+	    System.out.print(" *Music singer: "+singer);
+	    System.out.print(" *Music releaseyear: "+releaseYear);
+	    System.out.print(" *Music genre: "+genre+"\n");
+	}
 }

@@ -4,13 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import music.Japenmusic;
+import music.Koreamusic;
 import music.Music;
+import music.Musicinput;
 import music.Musickind;
 import music.USAmusic;
 
 public class Musicmanager {
 	
-	ArrayList<Music> musics=new ArrayList<Music>();
+	ArrayList<Musicinput> musics=new ArrayList<Musicinput>();
 	Scanner input;
 	   
 	Musicmanager(Scanner input){
@@ -19,7 +21,7 @@ public class Musicmanager {
 	   
 	public void addmusic() {
 		int kind = 0;
-		Music music;
+		Musicinput musicinput;
 		while(kind != 1&& kind!=2 && kind !=3) {
 			System.out.println("1 for KoreaMusic.");
 			System.out.println("2 for JapenMusic.");
@@ -27,21 +29,21 @@ public class Musicmanager {
 			System.out.print("Select num 1, 2 or 3 for Music Kind:");
 			kind = input.nextInt();
 			if(kind == 1) {
-				music=new Music(Musickind.Koreamusic);
-				music.getUserInput(input);
-			    musics.add(music);
+				musicinput=new Koreamusic(Musickind.Koreamusic);
+				musicinput.getUserInput(input);
+			    musics.add(musicinput);
 				break;
 			}
 			else if (kind == 2) {
-				music=new Japenmusic(Musickind.Japenmusic);
-				music.getUserInput(input);
-			    musics.add(music);
+				musicinput=new Japenmusic(Musickind.Japenmusic);
+				musicinput.getUserInput(input);
+			    musics.add(musicinput);
 				break;
 			}
 			else if (kind == 3) {
-				music=new USAmusic(Musickind.USAmusic);
-				music.getUserInput(input);
-			    musics.add(music);
+				musicinput=new USAmusic(Musickind.USAmusic);
+				musicinput.getUserInput(input);
+			    musics.add(musicinput);
 				break;
 			}
 			else {
@@ -73,8 +75,8 @@ public class Musicmanager {
 		System.out.print("Music Name:");
 	    String musicname=input.next();
 	    for(int i=0;i<musics.size();i++) {
-	    	Music music=musics.get(i);
-	        if(music.getMusicName().equals(musicname)) {
+	    	Musicinput musicinput=musics.get(i);
+	        if(musicinput.getMusicName().equals(musicname)) {
 	        	int num=-1;
 	            while(num!=5) {
 	            	System.out.println("*** Music Info Edit Meun ***");
@@ -89,22 +91,22 @@ public class Musicmanager {
 	            	case 1:
 	            		System.out.println("Music Name:");
 	            		String MusicName=input.next();
-	            		music.setMusicName(MusicName);
+	            		musicinput.setMusicName(MusicName);
 	            		break;
 	            	case 2:
 	            		System.out.println("Music Singer:");
 	            		String Singer=input.next();
-	            		music.setSinger(Singer);
+	            		musicinput.setSinger(Singer);
 	            		break;
 	            	case 3:
 	            		System.out.println("Music ReleaseYear:");
 	            		int ReleaseYear=input.nextInt();
-	            		music.setReleaseYear(ReleaseYear);
+	            		musicinput.setReleaseYear(ReleaseYear);
 	            		break;
 	            	case 4:
 	            		System.out.println("Music Genre:");
 	            		String Genre=input.next();
-	            		music.setGenre(Genre);
+	            		musicinput.setGenre(Genre);
 	            		break;
 	            	}//switch
 	            }//while
