@@ -1,5 +1,5 @@
 package music;
-
+ 
 import java.util.Scanner; 
 
 public class Koreamusic extends Music implements Musicinput{
