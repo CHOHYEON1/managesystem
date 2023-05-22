@@ -1,4 +1,4 @@
-package music;
+package music; 
  
 public enum Musickind {
 	Koreamusic,

@@ -2,44 +2,21 @@ package music;
  
 import java.util.Scanner; 
 
-public class Koreamusic extends Music implements Musicinput{
+public class Koreamusic extends Music {
 	
 	public Koreamusic(Musickind kind){
         super(kind);
 	}
 	
 	public void getUserInput(Scanner input) {
-		System.out.print("Music Name:");
-		String musicname=input.next();
-		this.setMusicName(musicname);
-		
-		System.out.print("Singer:");
-		String singer=input.next();
-		this.setSinger(singer);
-		      
-		System.out.print("Release Year:");
-		int releaseYear=input.nextInt();
-		this.setReleaseYear(releaseYear);
-		      
-		System.out.print("Genre:");
-		String genre=input.next();
-		this.setGenre(genre);
+		setMusicName(input);
+		setMusicSinger(input);
+		setMusicReleaseYear(input);      
+		setMusicGenre(input);
 	}
 	
 	public void printInfo() {
-		String skind="none";
-		switch(this.kind) {
-		case Koreamusic:
-			skind="Kpop.";
-			break;
-		case Japenmusic:
-			skind="Jpop.";
-			break;
-		case USAmusic:
-			skind="USApop.";
-			break;
-		default:
-		}
+		String skind=getKindString();
 		System.out.print(" *kind: "+skind);
 		System.out.print(" *Music name: "+musicName);
 	    System.out.print(" *Music singer: "+singer);
