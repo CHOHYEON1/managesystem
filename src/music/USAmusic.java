@@ -24,7 +24,7 @@ public class USAmusic extends Foreignmusic  {
 			System.out.print("Do you know singerAge? (Y/N)");
 			answer = input.next().charAt(0);
 			if(answer == 'y' || answer == 'Y') {
-				setsingerAge(input);
+				this.setsingerAge(input);
 				break;
 			}
 			else if(answer == 'n' || answer == 'N') {
