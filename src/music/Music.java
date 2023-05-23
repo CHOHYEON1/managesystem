@@ -96,7 +96,7 @@ public abstract class Music implements Musicinput{
 	public abstract void printInfo();
 	
 	public void setMusicName(Scanner input) {
-		System.out.println("Music Name:");
+		System.out.println("Music Name :");
 		String MusicName=input.next();
 		this.setMusicName(MusicName);
 	}
