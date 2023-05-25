@@ -31,28 +31,28 @@ public class Musicmanager {
             if(kind == 1) {
                musicinput=new Koreamusic(Musickind.Koreamusic);
                musicinput.getUserInput(input);
-                musics.add(musicinput);
+               musics.add(musicinput);
                break;
             }
             else if (kind == 2) {
-               musicinput=new Japenmusic(Musickind.Japenmusic);
-               musicinput.getUserInput(input);
+                musicinput=new Japenmusic(Musickind.Japenmusic);
+                musicinput.getUserInput(input);
                 musics.add(musicinput);
-               break;
+                break;
             }
             else if (kind == 3) {
-               musicinput=new USAmusic(Musickind.USAmusic);
-               musicinput.getUserInput(input);
+                musicinput=new USAmusic(Musickind.USAmusic);
+                musicinput.getUserInput(input);
                 musics.add(musicinput);
-               break;
+                break;
             }
             else {
-               System.out.println("Select num 1, 2 or 3 for Music Kind:");
+                System.out.println("Select num 1, 2 or 3 for Music Kind:");
             }
          }
          catch(InputMismatchException e) {
             System.out.println("Please put an integer between 1~3!");
-             if(input.hasNext()) {
+            if(input.hasNext()) {
                 input.next();
              }
              kind=-1;
@@ -61,26 +61,26 @@ public class Musicmanager {
    }
       
    public void deletemusic() {
-      System.out.print("Music Name:");
+       System.out.print("Music Name:");
        String musicname=input.next();
        int index=findIndex(musicname);
        removeFromMusics(index,musicname);
    }
    
    public int findIndex(String musicname) {
-      int index=-1;
-      for(int i=0;i<musics.size();i++) {
-         if(musics.get(i).getMusicName().equals(musicname)) {
-            index=i;
+       int index=-1;
+       for(int i=0;i<musics.size();i++) {
+          if(musics.get(i).getMusicName().equals(musicname)) {
+              index=i;
               break;
-         }
-      }
-      return index;
+          }
+       }
+       return index;
    }
    
    public int removeFromMusics(int index,String musicname) {
-      if(index>=0) {
-          musics.remove(index);
+       if(index>=0) {
+           musics.remove(index);
            System.out.println("the music"+musicname+"is deleted");
            return 1;
        }
@@ -91,12 +91,12 @@ public class Musicmanager {
    }
    
    public void editmusic() {
-      System.out.print("Music Name:");
+       System.out.print("Music Name:");
        String musicname=input.next();
        for(int i=0;i<musics.size();i++) {
-          Musicinput music=musics.get(i);
+           Musicinput music=musics.get(i);
            if(music.getMusicName().equals(musicname)) {
-              int num=-1;
+               int num=-1;
                while(num!=5) {
                   showEditMenu();
                   num=input.nextInt();
@@ -129,7 +129,7 @@ public class Musicmanager {
    }
    
    public void showEditMenu() {
-      System.out.println("*** Music Info Edit Meun ***");
+       System.out.println("*** Music Info Edit Meun ***");
        System.out.println("1.Edit Name");
        System.out.println("2.Edit Singer");
        System.out.println("3.Edit ReleaseYear");

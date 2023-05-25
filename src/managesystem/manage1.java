@@ -20,20 +20,20 @@ public class manage1 {
                 showMenu();
                 num=input.nextInt();
                 switch(num) {
-                case 1:
-                   musicmanager.addmusic();
-                   break;
-                case 2:
-                   musicmanager.deletemusic();
-                   break;
-                case 3:
-                   musicmanager.editmusic();
-                   break;
-                case 4:
-                   musicmanager.viewmusics();
-                   break;
-                default:
-                   continue;
+	                case 1:
+	                   musicmanager.addmusic();
+	                   break;
+	                case 2:
+	                   musicmanager.deletemusic();
+	                   break;
+	                case 3:
+	                   musicmanager.editmusic();
+	                   break;
+	                case 4:
+	                   musicmanager.viewmusics();
+	                   break;
+	                default:
+	                   continue;
                 }//switch
              }
              catch(InputMismatchException e) {
@@ -46,7 +46,7 @@ public class manage1 {
           }//while
    }
    public static void showMenu() {
-       System.out.println("**** Music Management System ****");
+        System.out.println("**** Music Management System ****");
         System.out.println("1.Add Music");
         System.out.println("2.Delete Music");
         System.out.println("3.Edit Music");

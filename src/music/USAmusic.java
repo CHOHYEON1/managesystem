@@ -11,11 +11,11 @@ public class USAmusic extends Foreignmusic  {
    }
    
    public void getUserInput(Scanner input) {
-      setMusicName(input);
-      setMusicSinger(input);
-      setMusicReleaseYearwithYN(input);      
-      setSingerAgewithYN(input);   
-      setMusicGenre(input);
+       setMusicName(input);
+       setMusicSinger(input);
+       setMusicReleaseYearwithYN(input);      
+       setSingerAgewithYN(input);   
+       setMusicGenre(input);
    }
       
    public void setSingerAgewithYN(Scanner input) {
@@ -40,9 +40,9 @@ public class USAmusic extends Foreignmusic  {
    }
       
     public void printInfo() {
-      String skind=getKindString();
+       String skind=getKindString();
        System.out.print(" *kind: "+skind);
-      System.out.print(" *Music name: "+musicName);
+       System.out.print(" *Music name: "+musicName);
        System.out.print(" *Music singer: "+singer);
        System.out.print(" *Music releaseyear: "+releaseYear);
        System.out.print(" *Music genre: "+genre);

@@ -25,11 +25,11 @@ public abstract class Foreignmusic extends Music {
          System.out.print("Do you have Release Year? (Y/N)");
          answer = input.next().charAt(0);
          if(answer == 'y' || answer == 'Y') {
-            setMusicReleaseYear(input);
-            break;
+             setMusicReleaseYear(input);
+             break;
          }
          else if(answer == 'n' || answer == 'N') {
-            this.setReleaseYear(0000);
+             this.setReleaseYear(0000);
              break;
          }
          else {
