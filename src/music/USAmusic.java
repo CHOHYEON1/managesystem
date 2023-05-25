@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class USAmusic extends Foreignmusic  {
 	
 	protected int singerAge;
-	
-	public USAmusic(Musickind kind){
+   
+   public USAmusic(Musickind kind){
         super(kind);
 	}
 	

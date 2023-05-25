@@ -28,3 +28,5 @@ public interface Musicinput {
 	
 	public void setMusicGenre(Scanner input);
 }
+
+
