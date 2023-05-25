@@ -1,11 +1,11 @@
-package managesystem; 
+package managesystem; //
  
 import exception.Singerformatexception;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class manage1 {
+public class Manage1 {
 
 
    public static void main (String args[]) {
@@ -38,7 +38,7 @@ public class manage1 {
                 }//switch
              }
              catch(InputMismatchException e) {
-                System.out.println("Please put an integer between 1~5!");
+                System.out.println("Please put an integer between 1~5 !");
                 if(input.hasNext()) {
                    input.next();
                 }
