@@ -6,8 +6,8 @@ public class USAmusic extends Foreignmusic  {
 	
 	protected int singerAge;
    
-   public USAmusic(Musickind kind){
-        super(kind);
+	public USAmusic(Musickind kind){
+		super(kind);
 	}
 	
 	public void getUserInput(Scanner input) {
@@ -37,10 +37,10 @@ public class USAmusic extends Foreignmusic  {
 		}
 	}
 		
-    public void printInfo() {
+	public void printInfo() {
 		String skind=getKindString();
-	    System.out.print(" *kind: "+skind);
-		System.out.print(" *Music name: "+musicName);
+		System.out.print(" *kind: "+skind);
+	    System.out.print(" *Music name: "+musicName);
 	    System.out.print(" *Music singer: "+singer);
 	    System.out.print(" *Music releaseyear: "+releaseYear);
 	    System.out.print(" *Music genre: "+genre);
