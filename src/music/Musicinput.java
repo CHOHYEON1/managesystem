@@ -27,6 +27,12 @@ public interface Musicinput {
 	public void setMusicReleaseYear(Scanner input);
 	
 	public void setMusicGenre(Scanner input);
+	
+  	public int getReleaseYear();
+  	
+  	public String getGenre();
+  	
+  	public String getSinger();
 }
 
 

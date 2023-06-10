@@ -1,6 +1,7 @@
 package managesystem; 
  
 import exception.Singerformatexception;
+import gui.WindowFrame;
 import log.EventLogger;
 
 import java.io.FileInputStream;
@@ -23,6 +24,7 @@ public class Manage1 {
   			musicmanager=new Musicmanager(input);
   		}
        
+  		WindowFrame frame=new WindowFrame(musicmanager);
   		selectMenu(input,musicmanager);
   		putObject(musicmanager,"musicmanager.ser");
   	}	

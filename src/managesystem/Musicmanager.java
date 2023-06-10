@@ -131,6 +131,14 @@ public class Musicmanager implements Serializable {
 			musics.get(i).printInfo();
 		}
 	}
+	
+	public int size() {
+		return musics.size();
+	}
+	
+	public Musicinput get(int index) {
+		return (Music) musics.get(index);
+	}
    
 	public void showEditMenu() {
 		System.out.println("*** Music Info Edit Meun ***");

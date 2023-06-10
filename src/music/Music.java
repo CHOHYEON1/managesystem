@@ -59,7 +59,13 @@ public abstract class Music implements Musicinput,Serializable{
   	public void setMusicName(String musicName) {
   		this.musicName = musicName;
   	}
+  	
 
+  	public String getSinger() {
+  		return singer;
+  	}
+
+  	
   	public void setSinger(String singer) throws Singerformatexception{
 		if(!singer.contains("a")) {
 			throw new Singerformatexception();
