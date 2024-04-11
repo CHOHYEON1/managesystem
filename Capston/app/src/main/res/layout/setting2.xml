@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:onClick="onBackBtnClicked"
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/keyboard_return" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="263dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif"
+        android:text="   새 소리"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="205dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif"
+        android:text="  초인종 소리"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="147dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif"
+        android:text="  차 소리"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="321dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif"
+        android:text="  파도 소리"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="253dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="63dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:text="추가 옵션"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
